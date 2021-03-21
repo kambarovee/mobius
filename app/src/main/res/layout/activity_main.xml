@@ -22,7 +22,8 @@
             <RelativeLayout
                 android:id="@+id/rl_topSection"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
 
                 <RelativeLayout
                     android:id="@+id/rl_appbar"
@@ -95,7 +96,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#E5E5E5">
+                android:background="#FAFAFA">
 
                 <LinearLayout
                     android:id="@+id/ll_carouselText"
@@ -169,6 +170,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ll_listSection"
+                    android:layout_marginBottom="30dp"
                     android:orientation="vertical"
                     android:paddingStart="16dp"
                     android:paddingTop="14dp">
@@ -186,14 +188,97 @@
                         android:layout_height="wrap_content"
                         android:text="Мы подбираем истории и предложения по темам, которые вам нравятся"
                         android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/eda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/interests_tv_style"
+                            android:padding="10dp"
+                            android:text="Еда"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/samorazvitie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/eda"
+                            android:background="@drawable/interests_tv_style"
+                            android:padding="10dp"
+                            android:text="Саморазвитие"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/technology"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/samorazvitie"
+                            android:background="@drawable/interests_tv_style"
+                            android:padding="10dp"
+                            android:text="Технологии"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/dom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/eda"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/interests_tv_style"
+                            android:padding="10dp"
+                            android:text="Дом"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/dosug"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/samorazvitie"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/dom"
+                            android:background="@drawable/interests_tv_style"
+                            android:padding="10dp"
+                            android:text="Досуг"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/care"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/samorazvitie"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/dosug"
+                            android:background="@drawable/interests_tv_style"
+                            android:padding="10dp"
+                            android:text="Забота о себе"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/science"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/technology"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/care"
+                            android:background="@drawable/interests_tv_style"
+                            android:padding="10dp"
+                            android:text="Наука"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+
                 </LinearLayout>
                 <!--End of Filters-->
-
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
-
-    <!-->
-        Carousel
-    <-->
 </LinearLayout>
