@@ -1,28 +1,29 @@
 package com.example.userprofilemobius2020.Adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.userprofilemobius2020.R
 import com.example.userprofilemobius2020.ViewItems.CarouselRecyclerViewItems
-import kotlinx.android.synthetic.main.cardview_items.view.*
+import com.example.userprofilemobius2020.databinding.CardviewItemsBinding
+
 
 class CarouselRecyclerViewAdapter(private val rvList: List<CarouselRecyclerViewItems>) :
     RecyclerView.Adapter<CarouselRecyclerViewAdapter.CarouselRVHolder>() {
-    class CarouselRVHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imageView: ImageView = itemView.iv_card
-        val title: TextView = itemView.tv_title
-        val secondaryTitle: TextView = itemView.tv_secondaryTitle
-        val secondarySubTitle: TextView = itemView.tv_secondarySubTitle
+    class CarouselRVHolder(private val binding: CardviewItemsBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
+        val imageView: ImageView = binding.ivCard
+        val title: TextView = binding.tvTitle
+        val secondaryTitle: TextView = binding.tvSecondaryTitle
+        val secondarySubTitle: TextView = binding.tvSecondarySubTitle
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarouselRVHolder {
         val itemView =
-            LayoutInflater.from(parent.context).inflate(R.layout.cardview_items, parent, false)
+            CardviewItemsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return CarouselRVHolder(itemView)
     }
 

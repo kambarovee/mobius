@@ -7,26 +7,32 @@ import com.example.userprofilemobius2020.Adapters.CarouselRecyclerViewAdapter
 import com.example.userprofilemobius2020.Adapters.ListRecyclerViewAdapter
 import com.example.userprofilemobius2020.ViewItems.CarouselRecyclerViewItems
 import com.example.userprofilemobius2020.ViewItems.ListRecyclerViewItems
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.userprofilemobius2020.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
 
         val cardItems = CarouselGenerator(2)
 
-        rv_cards.adapter = CarouselRecyclerViewAdapter(cardItems)
-        rv_cards.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        rv_cards.setHasFixedSize(true)
+        binding.rvCards.adapter = CarouselRecyclerViewAdapter(cardItems)
+
+        binding.rvCards.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvCards.setHasFixedSize(true)
 
 
         val listItems = listGenerator(3)
 
-        rv_list.adapter = ListRecyclerViewAdapter(listItems)
-        rv_list.layoutManager = LinearLayoutManager(this)
-        rv_list.setHasFixedSize(true)
+        binding.rvList.adapter = ListRecyclerViewAdapter(listItems)
+        binding.rvList.layoutManager = LinearLayoutManager(this)
+        binding.rvList.setHasFixedSize(true)
 
 
     }
