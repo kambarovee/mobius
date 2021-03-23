@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val cards = ArrayList<CarouselRecyclerViewItems>()
 
         val card = CarouselRecyclerViewItems(
-            R.drawable.icon_sberprime,
+            R.drawable.ic_mc_36_sberprime,
             "СберПрайм",
             "Платеж 9 июля",
             "199 Р в месяц"
