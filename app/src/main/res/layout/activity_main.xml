@@ -18,7 +18,7 @@
             android:id="@+id/rl_topSection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF">
+            android:background="@color/white">
 
             <RelativeLayout
                 android:id="@+id/rl_appbar"
@@ -65,7 +65,7 @@
                     android:layout_gravity="center"
                     android:padding="24dp"
                     android:text="@string/user_name"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FAFAFA">
+            android:background="@color/container_color">
 
             <LinearLayout
                 android:id="@+id/ll_carouselText"
@@ -104,14 +104,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingStart="16dp"
-                android:paddingTop="14dp"
+                android:paddingTop="34dp"
                 android:paddingEnd="5dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/carousel_topsection_title"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -148,7 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/list_header_title"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -185,7 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/filter_header_title"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -207,7 +207,7 @@
                         android:background="@drawable/interests_tv_style"
                         android:padding="10dp"
                         android:text="@string/filter1"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/samorazvitie"
@@ -229,7 +229,7 @@
                         android:background="@drawable/interests_tv_style"
                         android:padding="10dp"
                         android:text="@string/filter3"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/dom"
@@ -240,7 +240,7 @@
                         android:background="@drawable/interests_tv_style"
                         android:padding="10dp"
                         android:text="@string/filter4"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/dosug"
@@ -253,7 +253,7 @@
                         android:background="@drawable/interests_tv_style"
                         android:padding="10dp"
                         android:text="@string/filter5"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/care"
@@ -266,7 +266,7 @@
                         android:background="@drawable/interests_tv_style"
                         android:padding="10dp"
                         android:text="@string/filter6"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/science"
@@ -279,7 +279,7 @@
                         android:background="@drawable/interests_tv_style"
                         android:padding="10dp"
                         android:text="@string/filter7"
-                        android:textColor="#000000" />
+                        android:textColor="@color/black" />
                 </RelativeLayout>
 
             </LinearLayout>
