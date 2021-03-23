@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         rv_list.layoutManager = LinearLayoutManager(this)
         rv_list.setHasFixedSize(true)
 
-        supportActionBar?.hide()
 
     }
 
