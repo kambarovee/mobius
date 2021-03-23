@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">UserProfileMobius2020</string>
+    <string name="exit_button">Exit button</string>
+    <string name="close_button">Close button</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="user_name">Екатерина</string>
+    <string name="tab_profile">Профиль</string>
+    <string name="tab_settings">Настройки</string>
+    <string name="carousel_topsection_title">У вас подключено</string>
+    <string name="carousel_topsection_subtitle">Подписки, автоплатежи и сервисы на которые \nвы подписались</string>
+    <string name="list_header_title">Тарифы и лимиты</string>
+    <string name="list_header_subtitle">Для операций в Сбербанк Онлайн</string>
+    <string name="filter_header_title">Интересы</string>
+    <string name="filter_header_subtitle">Мы подбираем истории и предложения по темам, которые вам нравятся</string>
+    <string name="filter1">Еда</string>
+    <string name="filter2">Саморазвитие</string>
+    <string name="filter3">Технологии</string>
+    <string name="filter4">Дом</string>
+    <string name="filter5">Досуг</string>
+    <string name="filter6">Забота о себе</string>
+    <string name="filter7">Наука</string>
 </resources>
